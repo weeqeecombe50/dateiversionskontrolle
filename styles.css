@@ -35,5 +35,5 @@ button {
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #388e3c; /* Improved hover color for accessibility */
 }
