@@ -2,8 +2,8 @@ document.getElementById('upload-button').addEventListener('click', function() {
     const fileInput = document.getElementById('file-input');
     const file = fileInput.files[0];
     if (file) {
-        // Logik zum Hochladen der Datei und Verfolgen der Versionen
-        console.log(`Datei ${file.name} erfolgreich hochgeladen!`);
+        // Logic to upload the file and track versions
+        console.log(`File ${file.name} uploaded successfully!`);
         addVersionToHistory(file.name);
     }
 });
@@ -11,6 +11,6 @@ document.getElementById('upload-button').addEventListener('click', function() {
 function addVersionToHistory(fileName) {
     const versionList = document.getElementById('version-list');
     const li = document.createElement('li');
-    li.textContent = `Version von ${fileName} am ${new Date().toLocaleString()}`;
+    li.textContent = `Version of ${fileName} on ${new Date().toLocaleString()}`;
     versionList.appendChild(li);
 }
