@@ -3,7 +3,7 @@ document.getElementById('upload-button').addEventListener('click', function() {
     const file = fileInput.files[0];
     if (file) {
         // Logic to upload the file and track versions
-        console.log(`Successfully uploaded: ${file.name}!`);
+        console.log(`Successfully uploaded: ${file.name} (${file.size} bytes)!`);
         addVersionToHistory(file.name);
     }
 });
